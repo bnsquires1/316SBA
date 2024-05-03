@@ -18,7 +18,7 @@
 
     </header>
     <form action="">
-        <input type="text" class="todo-input">
+        <input type="text" class="todo-input" placeholder="What do you have planned?">
         <button class="todo-button" type="submit">
         </button>
         <div class="select">
@@ -30,9 +30,24 @@
         </div>
     </form>
 
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
-    </div>
+    <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+
+            <div class="task">
+                <div class="content">
+                    <input type="text" class="text" value="My Shiny Task" />
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
 </body>
 
 </html>
