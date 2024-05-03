@@ -1,0 +1,12 @@
+/* color palette from coolers */
+body{
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        000814,
+        001d3d,
+        003566,
+    )
+}
+
+
