@@ -1,12 +1,58 @@
-/* color palette from coolers */
-body{
-    height: 100vh;
-    background: linear-gradient(
-        135deg,
-        000814,
-        001d3d,
-        003566,
-    )
+/* color palette from coolers
+body {
+    background-color: linear-gradient(
+            /* CSS HEX */
+            /* 135deg
+            #000814ff
+            #001d3dff
+            #003566ff
+            #ffc300ff
+            #ffd60aff
+        ) */
+/* } */
+
+* {
+    margin: 100;
+    /* padding: 0; */
+    /* box-sizing: border-box; */
 }
 
+body {
+    background-color: mediumslateblue;
+    color:aliceblue;
+    height: 100vh;
+}
 
+header {
+    font-size: 15px;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, 
+form button {
+padding:0.5rem;
+padding-left: 1rem;
+font-size: 1.8rem;
+border: none;
+background: aliceblue;
+border-radius: 2rem;
+}
+
+form button {
+    color: rgb(255, 200, 0);
+    background: aliceblue;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+form button:hover {
+    color: aliceblue;
+    background:rgb(255, 200, 0);
+}
