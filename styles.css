@@ -1,29 +1,36 @@
 /* color palette from coolers
-body {
-    background-color: linear-gradient(
-            /* CSS HEX */
-            /* 135deg
-            #000814ff
-            #001d3dff
-            #003566ff
-            #ffc300ff
-            #ffd60aff
-        ) */
-/* } */
+/*  */
+
+:root {
+    /* CSS HEX */
+--rich-black: #000814ff;
+--oxford-blue: #001d3dff;
+--yale-blue: #003566ff;
+--mikado-yellow: #ffc300ff;
+--gold: #ffd60aff;
+}
 
 * {
-    margin: 100;
-    /* padding: 0; */
-    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
 }
 
 body {
-    background-color: mediumslateblue;
-    color:aliceblue;
+    background-image: linear-gradient(to right, var(--rich-black),var(--yale-blue));
+    color: whitesmoke;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
 }
 
 header {
+    padding: 2rem 1rem;
+    max-width:800px;
+    width: 100%;
+    margin: 0 auto;
     font-size: 15px;
 }
 
