@@ -77,7 +77,35 @@ p {
     color: aliceblue;
 } 
 
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 #select {
     margin-left: 1rem;
     margin-bottom: 3rem;
+    background-image: linear-gradient(to bottom, var(--light-cyan), var(--pacific-cyan));
 }
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--federal-blue);
+    margin-bottom: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var (var(--non-photo-blue));
+}
+
+
