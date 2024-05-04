@@ -63,7 +63,8 @@ edit.addEventListener("click", (evt) => {
         taskInput.focus();
         edit.innerText = "Save";
     } else {
-        console.log("Save");
+        taskInput.setAttribute("readonly", "readonly");
+        edit.innerText = "Edit";
     }
 });
 
