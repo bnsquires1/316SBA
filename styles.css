@@ -3,11 +3,11 @@
 
 :root {
     /* CSS HEX */
---rich-black: #000814ff;
---oxford-blue: #001d3dff;
---yale-blue: #003566ff;
---mikado-yellow: #ffc300ff;
---gold: #ffd60aff;
+    --federal-blue: #03045eff;
+    --honolulu-blue: #0077b6ff;
+    --pacific-cyan: #00b4d8ff;
+    --non-photo-blue: #90e0efff;
+    --light-cyan: #caf0f8ff;
 }
 
 * {
@@ -18,8 +18,8 @@
 }
 
 body {
-    background-image: linear-gradient(to right, var(--rich-black),var(--yale-blue));
-    color: whitesmoke;
+    background-image: linear-gradient(to top, var(--federal-blue),var(--honolulu-blue));
+    color: var(--light-cyan);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -34,31 +34,50 @@ header {
     font-size: 15px;
 }
 
-h1 h2 {
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--federal-blue);
+}
+
+#form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--mikado-yellow);
 }
 
 form input, 
 form button {
-padding:0.5rem;
+/* padding:0.5rem;
 padding-left: 1rem;
-font-size: 1.8rem;
+font-size: 1.8rem; */
 border: none;
-background: aliceblue;
-border-radius: 2rem;
+background: none;
+}
+p {
+    margin-bottom: 1rem;
+}
+#todo-input {
+    flex: 1 1 0%;
+    background-color: var(--federal-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--honolulu-blue);
+    font-size: 1.25rem;
 }
 
-form button {
-    color: rgb(255, 200, 0);
-    background: aliceblue;
+#todo-button {
+    font-size: medium;
+    font-weight: 800;
+    /* background: var(--rich-black); */
     cursor: pointer;
     transition: all 0.3 ease;
 }
 
-form button:hover {
+#todo-button:hover {
     color: aliceblue;
-    background:rgb(255, 200, 0);
+} 
+
+#select {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
 }
