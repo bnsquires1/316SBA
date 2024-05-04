@@ -34,12 +34,11 @@ header {
     font-size: 15px;
 }
 
-header,
-form {
-    min-height: 20vh;
+h1 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--mikado-yellow);
 }
 
 form input, 
